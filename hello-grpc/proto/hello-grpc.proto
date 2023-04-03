@@ -1,0 +1,40 @@
+syntax="proto3";
+
+package hellogrpc;
+
+
+option go_package="learning-grpc/hello-grpc/proto";
+
+
+
+
+message HelloWorldRequest{
+    string first_name = 1;
+    string msisdn = 2;
+}
+
+message HelloWorldResponse{
+    string resutl = 1;
+    string msisdn = 2;
+}
+
+
+service HelloWorldlService {
+        // implement unary GRPC
+    rpc HelloWorld(HelloWorldRequest) returns(HelloWorldResponse);
+
+    // implement Server streaming
+    rpc HelloWorldWithServerSteaming(HelloWorldRequest) returns(stream HelloWorldResponse);
+    
+    // implement client streaming
+    rpc HelloWorldWithClientStreaming(stream HelloWorldRequest) returns(HelloWorldResponse);
+    
+    // implement bidirectional grpc
+    rpc HelloWorldWithBidirectional(stream HelloWorldRequest) returns(stream HelloWorldResponse);
+
+    // implement grpc with error message
+    rpc HelloWorldWithErrorMsg(HelloWorldRequest) returns(HelloWorldResponse);
+
+    // implment helloworld with deadline
+    rpc HelloWorldWithDeadLines(HelloWorldRequest) returns(HelloWorldResponse);
+}
