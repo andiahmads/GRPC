@@ -19,7 +19,7 @@ https://grpc.io/docs/languages/go/quickstart/
 
 
 for ubuntu user
-https://snapcraft.io/protobuf
+apt install -y protobuf-compiler
 
 
 for mac user
