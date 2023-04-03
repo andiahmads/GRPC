@@ -14,7 +14,16 @@ Simple Implementation GRPC for baginer
 for generate proto file, please visit
 
 ```
+manual instalation
 https://grpc.io/docs/languages/go/quickstart/
+
+
+for ubuntu user
+https://snapcraft.io/protobuf
+
+
+for mac user
+brew install protobuf
 ```
 
 So make sure install the dependency in your local:
