@@ -18,9 +18,9 @@ manual instalation
 https://grpc.io/docs/languages/go/quickstart/
 
 
-for ubuntu user
 apt install -y protobuf-compiler
 
+for ubuntu user
 
 for mac user
 brew install protobuf

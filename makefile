@@ -31,3 +31,6 @@ grpc-test:
 
 product-server:
 	go run product/cmd/main.go
+
+product-client:
+	go run product/client/main.go
